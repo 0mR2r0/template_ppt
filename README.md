@@ -6,3 +6,4 @@ Compilador:LuaLatex
 LaTeX : Tex_live
 Rojo SEP : RGB 98, 17, 50
 Azul TecNM : RGB 27,57,106
+![Portada de la plantilla](assets/portada.png)
