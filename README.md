@@ -1,10 +1,10 @@
 # Plantilla para presentaciones usando LaTeX
 ## Informacion general
-Esta es una plantilla en Latex con los logos oficiales de la SEP y del CENIDET(no oficial)\
+Esta es una plantilla en Latex con los logos oficiales de la SEP y del CENIDET basado en:\
+[a link]((https://reunionnacional.tecnm.mx/df/Manual_de_Identidad_Grafica.pdf))
 Fuente: Monstserrat
-Fuente matematica: Stixtwomath
+[a link](https://fonts.google.com/specimen/Montserrat)
 
-LaTeX : Tex_live
 Rojo SEP : RGB 98, 17, 50
 Azul TecNM : RGB 27,57,106
 > [!TIP]
