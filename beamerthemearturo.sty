@@ -1,0 +1,23 @@
+%Si sabes lo que estas haciendo modificalo sino dejalo como esta
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\RequirePackage[most]{tcolorbox}
+%Declaracion de logo
+\DeclareOptionBeamer{logo}{\PassOptionsToPackage{logo=#1}{beamerouterthemearturo}}
+\ProcessOptionsBeamer
+
+% Configuracion general de la presentacion en beamer
+\useinnertheme{arturo}
+\useoutertheme{arturo}
+\usefonttheme{arturo}	
+\usecolortheme{arturo}
+
+%\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+\setbeamertemplate{navigation symbols}{} 	
+
+
+\mode<all>

@@ -1,0 +1,60 @@
+% to use non-standard font
+\usepackage{fontspec}
+%Fuentes matematicas Stix
+\usepackage{unicode-math}
+\setmathfont{STIX Two Math}
+\usepackage{siunitx}
+\AtBeginDocument{\usebeamerfont{normal text}}
+% to ensure that beamer does not meddle with the fonts we use
+\usefonttheme{professionalfonts}
+
+% Definir estilo de la fuente
+%\setmainfont[
+%Path         = /home/omar/Documentos/template/fonts/Lato/,
+%Extension    = .ttf,
+%UprightFont    = Lato-Light,
+%SmallCapsFont  = Lato-Light,
+%BoldFont       = Lato-Bold,
+%ItalicFont     = Lato-Italic,
+%BoldItalicFont = Lato-BoldItalic,
+%Ligatures    = TeX]{lato}
+
+\setmainfont[
+Path         = fonts/Montserrat/,
+Extension    = .ttf,
+UprightFont    = Montserrat-Regular,
+BoldFont       = Montserrat-Bold,
+ItalicFont     = Montserrat-Italic,
+BoldItalicFont = Montserrat-BoldItalic,
+Ligatures    = TeX]{montserrat}
+
+
+%Configuracion de la fuente en la portada
+\setbeamerfont{title}{family=\rmfamily, series=\bfseries, size=\normalsize}
+\setbeamerfont{subtitle}{family=\rmfamily, series=\mdseries, size=\small}
+\setbeamerfont{date}{family=\rmfamily, series=\mdseries, size=\tiny}
+\setbeamerfont{author}{family=\rmfamily, series=\mdseries, size=\small}
+\setbeamerfont{tableofcontents}{family=\rmfamily, series=\bfseries, size=\large}
+\setbeamerfont{section in toc}{family=\rmfamily, series=\bfseries, size=\normalsize}
+\setbeamerfont{director}{{family=\rmfamily, series=\mdseries, size=\small}}
+%Configuracion de la fuente en las diapositivas
+\setbeamerfont{frametitle}{family=\rmfamily, series=\bfseries, size=\normalsize}
+\setbeamerfont{framesubtitle}{family=\rmfamily, series=\mdseries, size=\small}
+
+\setbeamerfont{normal text}{family=\rmfamily,series=\mdseries, size=\footnotesize}
+\setbeamerfont{proyected text}{parent=normal text}
+\setbeamerfont{structure}{parent=normal text}
+
+\setbeamerfont{caption}{family=\rmfamily,series=\mdseries, size=\scriptsize}
+
+%Configuracion de item
+\setbeamerfont{item}{family=\rmfamily,size=\normalsize,series=\small}
+\setbeamerfont{item projected}{family=\rmfamily,size=\normalsize,series=\small}
+\setbeamerfont{itemize item}{family=\rmfamily,size=\normalsize,series=\footnotesize}
+\setbeamerfont{itemize subitem}{family=\rmfamily,size=\normalsize,series=\small}
+\setbeamerfont{itemize subsubitem}{family=\rmfamily,size=\normalsize,series=\small}
+\setbeamerfont{itemize/enumerate body}{family=\rmfamily,size=\normalsize,series=\small}
+\setbeamerfont{itemize/enumerate subbody}{family=\rmfamily,size=\normalsize,series=\small}
+\setbeamerfont{itemize/enumerate subsubbody}{family=\rmfamily,size=\normalsize,series=\small}
+
+

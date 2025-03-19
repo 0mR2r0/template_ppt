@@ -1,0 +1,96 @@
+\usepackage{tikz}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+%Si sabes lo que estas haciendo modificalo sino dejalo como esta
+\mode<presentation>
+%Declaracion para usar una imagen de fondo
+%\DeclareOptionBeamer{background}{\def\beamer@Saarland@background{#1}}
+%\ExecuteOptionsBeamer{background=} % Default value is empty
+%Declaracion de logo para pie de diapositiva
+\DeclareOptionBeamer{logo}{\def\beamer@arturo@logo{#1}}
+\ExecuteOptionsBeamer{logo=} % Default value is empty
+\ProcessOptionsBeamer
+
+% Configuracion de la portada de la presentacion
+\setbeamertemplate{title page}{
+	
+		
+		\begin{picture}(0,0)
+			
+			\put(0,-220){\begin{beamercolorbox}[wd=\paperwidth,ht=2ex,dp=1ex,leftskip=.3cm,rightskip=.3cm]{border}%
+				\end{beamercolorbox}}%
+			\put(-40,-5){\begin{beamercolorbox}[wd=\paperwidth,ht=1.3cm]{secsubsec}%
+					\hspace{3.5cm}
+					\includegraphics[scale=0.2]{logo_sep.png}
+				\end{beamercolorbox}}
+			\put(220,5){\begin{beamercolorbox}[wd=\paperwidth,ht=1.3cm]{secsubsec}%
+					\hspace{3.5cm}
+					\includegraphics[scale=0.11]{logo_cenidet.png}
+			\end{beamercolorbox}}	
+				
+		\end{picture}
+		
+		\centering
+		\vspace{0.3cm}
+		\usebeamerfont{title}{\usebeamercolor[fg]{title}\inserttitle}\par
+		\usebeamerfont{subtitle}{\usebeamercolor[fg]{subtitle}\insertsubtitle}\par
+		\bigskip
+		\centering
+		\usebeamerfont{author}\insertauthor\par
+		\usebeamerfont{institute}\insertinstitute\par
+		\centering
+		\usebeamerfont{date}\insertdate\par
+	
+ 
+}
+%Configuracion del encabezado
+\setbeamertemplate{headline}
+{
+	\leavevmode%
+	\hbox{
+	\begin{beamercolorbox}[wd=.33\paperwidth,ht=1.3cm]{secsubsec}%
+		\hspace{3.5cm}
+		\begin{picture}(0,0)
+			\put(-100,0){
+			\includegraphics[height=1.3cm]{logo_sep.png}}
+		\end{picture}
+	\end{beamercolorbox}%
+	\vspace{0.1cm}
+	\begin{beamercolorbox}[wd=.5\paperwidth,ht=1cm,right]{secsubsec}%
+		\begin{picture}(0,0)
+			\put(10,6){
+				\includegraphics[height=0.7cm]{logo_cenidet.png}	
+				}%
+		\end{picture}	
+	\end{beamercolorbox}%
+	}%
+}
+%Configuracion del pie de diapositiva
+\setbeamertemplate{footline}
+{%
+	\leavevmode%
+	\hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm]{footlinecolor}%
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{footlinecolor}%
+			%\usebeamerfont{author in head/foot}\hfill
+			\insertpagenumber
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+% Para insertar fondo con marca de agua
+%\setbeamertemplate{sidebar right}
+%{
+	%\if \beamer@Saarland@background\@empty
+	%\else
+	%\vskip.1\beamer@leftmargin%
+	%\vfill%
+	%\llap{\includegraphics[width=.5\paperwidth,height=.5\paperheight]{\beamer@Saarland@bac%kground}}
+%	\fi
+%}
+
+%Numeracion de figuras
+\setbeamertemplate{caption}[numbered]
+
+
+\mode<all>
+\endinput

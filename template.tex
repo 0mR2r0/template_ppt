@@ -1,0 +1,62 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[spanish,es-tabla,es-nodecimaldot]{babel}
+\usetheme[logo=logo_cenidet.png]{arturo}
+\setbeamersize %margenes laterales de la slide
+{
+	text margin left=0.5cm,
+	text margin right=1cm,
+}
+%Declaracion de contenedor de imagenes
+\graphicspath{{images/}}
+%--------------------------------------
+\title{\normalsize{Titulo de la presentación}}
+\subtitle{subtitulo de la presentación}
+\date{\today}
+\author[ABCD]{Nombre del chico del bien \\
+	\vspace{0.5cm}
+	\scriptsize{\textbf{Director de tesis:} Nombre del director(a)}\\
+	\scriptsize{\textbf{Codirector(a) de tesis}: Nombre del director(a)}\\
+	\vspace{0.5cm}
+	Comité revisor:\\
+	\vspace{0.1cm}
+	\scriptsize{ Revisor 1}\\
+	\scriptsize{ Revisor 2 }\\
+	\scriptsize{ Revisor 3}
+	\vspace{0.1cm}	
+} 
+
+\begin{document}
+	
+	\begin{frame}[plain]
+		\titlepage
+	\end{frame}
+	\begin{frame}
+		\tableofcontents
+	\end{frame}
+	\section{Sección 1}
+	\begin{frame}
+		\frametitle{Título de Diapositiva}
+		\framesubtitle{Subtítulo de diapositiva}
+		Chicos del bien
+	\end{frame}
+	\subsection{Subsección 1}
+	\begin{frame}
+		\frametitle{Título de Diapositiva}
+		\framesubtitle{Subtítulo de diapositiva}
+		\begin{mybox}{Titulo de la caja}
+			\begin{itemize}
+				\item Item 1
+			\end{itemize}
+		\end{mybox}	
+	\end{frame}
+	\subsubsection{Subsubsección 1}
+	\begin{frame}
+		\frametitle{Titulo de Diapositiva}
+		\framesubtitle{Subtitulo de diapositiva}
+		\begin{mybox}{Ecuación}
+			\begin{equation}
+				F=mc^2
+			\end{equation}
+		\end{mybox}	
+	\end{frame}
+\end{document}

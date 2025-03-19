@@ -1,0 +1,14 @@
+\mode<presentation>
+%Color de las viñetas \item
+\defbeamertemplate{itemize item}{circ}%
+{\small\raise.2ex\hbox{\color{navyblue}$\bullet$}}
+\defbeamertemplate{itemize subitem}{circ}%
+{\small\raise.1ex\hbox{\color{violet}$\circ$}}
+\defbeamertemplate{itemize subsubitem}{circ}%
+{\scriptsize\raise.1ex\hbox{\color{navyblue}$\bullet$}}
+\setbeamertemplate{items}[circ]
+
+%Configuracion de cajas "tcolorbox"
+\newtcolorbox{mybox}[1]{enhanced,colback=blue!5!white,colframe=bluetecnm, fonttitle=\mdseries, title={#1}, width=\linewidth,valign=center }
+
+\mode<all>
