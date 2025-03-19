@@ -10,7 +10,11 @@ Azul TecNM : RGB 27,57,106
 > [!TIP]
 > Clona el repositorio y cambia el nombre del archivo template.tex 
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 > Usa el compilador LuaLatex
+
+> [!WARNING]
+> Si modificas los archivos del tema, es bajo tu propio riesgo y sabes lo que estas haciendo.
+
 
 ![Portada de la plantilla](assets/portada.png)
